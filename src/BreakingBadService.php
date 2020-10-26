@@ -25,7 +25,7 @@ class BreakingBadService
         ]);
     }
 
-    public function searchName($query)
+    public function searchCharactersByQuery($query)
     {
         $url = 'characters?name=' . $query;
         $response = $this->client->request('GET', $url);
