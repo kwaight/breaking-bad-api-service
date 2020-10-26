@@ -4,13 +4,22 @@ namespace kwaight\BreakingBadApiService;
 
 use GuzzleHttp\Client;
 
+/**
+ * Class BreakingBadService
+ * @package kwaight\BreakingBadApiService
+ */
 class BreakingBadService
 {
     /**
+     * Base url for configuration of Guzzle
      * @var $baseUrl
      */
     private $baseUrl = '';
 
+    /**
+     * Guzzle client
+     * @var Client
+     */
     private $client;
 
     /**
@@ -25,6 +34,13 @@ class BreakingBadService
         ]);
     }
 
+    /**
+     * Method to search characters by query string
+     * @param $query
+     * @return mixed
+     * @throws BreakingBadServiceException
+     * @throws \GuzzleHttp\Exception\GuzzleException
+     */
     public function searchCharactersByQuery($query)
     {
         $url = 'characters?name=' . $query;

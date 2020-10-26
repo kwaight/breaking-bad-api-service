@@ -2,6 +2,10 @@
 
 namespace kwaight\BreakingBadApiService;
 
+/**
+ * Class BreakingBadServiceException
+ * @package kwaight\BreakingBadApiService
+ */
 class BreakingBadServiceException extends \Exception
 {
     // Redefine the exception so message isn't optional

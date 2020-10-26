@@ -4,6 +4,10 @@ namespace kwaight\BreakingBadApiService;
 
 use Illuminate\Support\ServiceProvider;
 
+/**
+ * Class BreakingBadApiServiceProvider
+ * @package kwaight\BreakingBadApiService
+ */
 class BreakingBadApiServiceProvider extends ServiceProvider
 {
     /**
